@@ -32,7 +32,7 @@ provider "aws" {
 resource "aws_instance" "web" {
 	ami = "ami-8328bbf0"
 	instance_type = "t2.micro"
-	count = "2"
+	count = "1"
 	subnet_id = "subnet-51ab1e09"
 	vpc_security_group_ids = ["sg-01272d66"]
 	tags {
